@@ -1014,6 +1014,11 @@ margin-top: 5rem;
 
 
 @media only screen and (max-width : 568px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
     nav .links,
     nav .last{
         display: none;
@@ -1197,6 +1202,9 @@ margin-top: 5rem;
 
 
 @media (max-width : 896px) and (min-width : 569px) {
+    body{
+        overflow-x: hidden;
+    }
     nav .links,
     nav .last{
     display: none;
