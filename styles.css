@@ -727,6 +727,7 @@ margin-top: 5rem;
 /* FAQ section */
 
 #faq{
+    overflow: hidden;
     height: 1153px;
     position: relative;
     overflow: hidden;
@@ -834,6 +835,7 @@ margin-top: 5rem;
 /* revolutionalze section */
 .banner {
     position: relative;
+    overflow: hidden;
     height: 400px;
     background-color: #1E3448;
     display: flex;
@@ -889,6 +891,7 @@ margin-top: 5rem;
 /* footer section */
 
 #footer{
+    overflow: hidden;
     margin-top: 4rem;
     position: relative;
    
