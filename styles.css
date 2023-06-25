@@ -121,6 +121,13 @@ nav .last{
     cursor: pointer;   
 }
 
+.mybtn:hover{
+    color: #0065FE;
+    background-color: #FFFFFF;
+    transition: .7s;
+    border: 1px solid #0065FE;
+}
+
 .drop-down{
    
     position: absolute;
@@ -203,18 +210,26 @@ nav .last{
     margin-bottom: var(--margin);
 }
 
-.sign a {
+.person {
     background-color: var(--color);
     color: var(--bg-color);
-    padding: 0.6rem 2rem;
+    font-size: var(--normal-font);
+    line-height: 12px;
+    font-family: 'Gilroy-SemiBold' sans-serif;
     border: none;
-    border-radius: 20px;
+    width: 142px;
+    height: 44px;
+    border-radius: 100px;
     outline: none;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: 'Gilroy-Medium', sans-serif;
+    cursor: pointer;   
 }
 
+.person:hover{
+    background-color: #FFFFFF;
+    color: #0065FE;
+    border: 1px solid #0065FE;
+    transition: .7s;
+}
 
 .sign p{
     font-family: 'Gilroy-Medium', sans-serif;
@@ -282,13 +297,13 @@ nav .last{
 .trickyy{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background-color: #F9FBFD;
-    gap: 4rem;
+    gap: 6rem;
     padding: 20px;
 }
 
-.trick2{
+.trick2, .trickk2{
     display: flex;
     justify-content: center;
     align-items: start;
@@ -588,6 +603,12 @@ margin-top: 5rem;
     background-color: #FFFFFF;
 }
 
+.custom2:hover{
+    color: #FFFFFF;
+    background-color: #0065FE;
+    transition: .7s;
+}
+
 .custom3{
     height: 48px;
     width: 200px;
@@ -598,6 +619,14 @@ margin-top: 5rem;
     color: #FFFFFF;
     background-color: #0065FE;
 }
+
+.custom3:hover{
+    color: #0065FE;
+    background-color: #FFFFFF;
+    border: 1px solid #0065FE;
+    transition: .7s;
+}
+
 
 
 
@@ -693,20 +722,26 @@ margin-top: 5rem;
     font-family: 'Gilroy-SemiBold' sans-serif;
     line-height: 12px;
 }
+
+.button:hover{
+    color: #0065FE;
+    background-color: #FFFFFF;
+    border: 1px solid #0065FE;
+    transition: .7s;
+}
   
 
-.form-text{
-    
+.form-text{ 
+    font-family: 'Gilroy-Medium';
     color: var(--color);
     width: 350px;
     line-height: 20px;
     margin-top: 10px;
-    font-size: 14px;
-    
+    font-size: 14px; 
 }
 
 .my-form > p{
-    font-family: 'Gilroy-' ;
+    font-family: 'Gilroy-SemiBold' sans-serif;
 }
 
 .group1{
@@ -869,6 +904,13 @@ margin-top: 5rem;
     cursor: pointer;
     width: 200px;
     height:  48px;
+  }
+
+  .my-btn:hover{
+    color: #0065FE;
+    background-color: #FFFFFF;
+    border: 1px solid #0065FE;
+    transition: .7s;
   }
   
 
@@ -1037,7 +1079,7 @@ margin-top: 5rem;
     }
 
     .optimize{
-        font-family: 'Gilroy-Medium';
+        font-family: 'Gilroy-Bold' sans-serif;
         line-height: 40px;
         font-size: 30px;  
     }
@@ -1045,8 +1087,8 @@ margin-top: 5rem;
     .personalize1{
         margin-top: 10px;
         text-align: center;
-        font-family: 'Gilroy-Light';
-        font-size: 16px;    
+        font-family: 'Gilroy-Medium';
+        font-size: 15px;    
         line-height: 20px;
     }
 
@@ -1074,13 +1116,20 @@ margin-top: 5rem;
        
     }
 
+    .trick2{
+      
+        gap: 8rem;   
+        
+    }
+
+    .trickk2{
+        gap: 3rem;   
+    }
+
+
     .one{
         font-size: 35px;
         line-height: 50px;
-    }
-
-    .poss1{
-        margin-top: 3rem;
     }
 
     .link{   
@@ -1206,7 +1255,7 @@ margin-top: 5rem;
 
 
 
-@media (max-width : 896px) and (min-width : 569px) {
+@media (min-width : 569px) and (max-width : 896px) {
     body{
         overflow-x: hidden;
     }
@@ -1252,26 +1301,17 @@ margin-top: 5rem;
         width: 300px;   
     }
 
+ 
     .trickyone{
-        width: 419px;
+        width: 600px;
     }
 
     .trickyy{
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        align-items: center;
-        background-color: #F9FBFD;
-        padding: 20px;
     }
-
-    .trick2{
-        width: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-basis: 50%;
-    }
-
-
+ 
     .one{
         font-size: 35px;
         line-height: 50px;
@@ -1391,7 +1431,7 @@ margin-top: 5rem;
     }
 
 
-@media only screen and (max-width : 990px) and (min-width : 570px){
+/* @media only screen and (max-width : 990px) and (min-width : 570px){
    
     .amoeba{
         margin: auto;
@@ -1436,4 +1476,4 @@ margin-top: 5rem;
         font-size: 13px; 
         line-height: 2.5rem;
     }  
-}
+} */
