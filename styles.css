@@ -435,6 +435,7 @@ margin-top: 5rem;
     align-items: center;
     margin-top: 5rem;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -1105,6 +1106,7 @@ margin-top: 5rem;
         line-height: 32px;
         font-size: 30px;
     }
+
     .card{
         display: flex;
         flex-direction: column;
