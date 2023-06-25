@@ -1378,7 +1378,7 @@ margin-top: 5rem;
     }
 
 
-@media only screen and (max-width : 1440px) and (min-width : 1024px){
+@media only screen and (max-width : 990px) and (min-width : 570px){
    
     .amoeba{
         margin: auto;
