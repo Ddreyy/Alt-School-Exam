@@ -1,0 +1,1426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+    
+}
+
+:root{
+    --bg-color : #ffffff;
+    --text-color : #141414;
+    --color : #0065FE;
+    --h1-font : 48px;
+    --h2-font : 2rem;  
+    --normal-font : 16px;
+    --semi-normal : 18px;
+    --gap : 3rem;
+    --margin : 2rem;
+    --max-width : 62.5rem;
+    --padding : 15rem;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.logo{   
+    display: flex;
+    gap: 4px;
+}
+
+ul > li >  a{
+    display: flex;
+    font-size: var(--normal-font);
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #141414;
+    position: relative;
+}
+
+ul> li > a::after{
+    content: '';
+    width: 0%;
+    height: 4px;
+    background: var(--color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+ul > li > a:hover::after{
+    width: 100%;
+    font-size: 30px;
+} 
+
+a:hover{
+    color: #0065FE;  
+}
+
+.arrow{
+    gap: 4px;
+}
+
+
+
+.last > .login{
+    font-size: var(--normal-font);
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #005AE2;
+}
+
+
+
+header {
+    position: relative;
+    padding: 0.3rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1150px;
+    height : 44px;
+    margin: auto;
+
+}
+
+nav .links{
+    display: flex;
+    gap: var(--gap);
+}
+
+nav .last{
+    display: flex;
+    gap: var(--gap);
+    align-items: center;
+}
+
+.bars{
+    display: none;
+    color: #0065FE;
+    font-size: 1.5rem;
+   
+}
+
+.mybtn{
+    background-color: var(--color);
+    color: var(--bg-color);
+    font-size: var(--normal-font);
+    line-height: 12px;
+    font-family: 'Gilroy-SemiBold' sans-serif;
+    border: none;
+    width: 142px;
+    height: 44px;
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;   
+}
+
+.drop-down{
+   
+    position: absolute;
+    right: 1.5rem;
+    top: 50px;
+    cursor: pointer;
+    width: 300px;
+    background: rgba(50, 83, 203, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;   
+}
+
+.drop-down .open{
+    height: 250px;
+}
+
+.drop-down li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* section page */
+.section{
+    margin-top: 6rem;
+  
+
+}
+
+.optimiz{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.optimize{
+    text-align: center;
+    font-family: 'Gilroy-Bold' ;
+    line-height: 96px;
+    font-size: var(--h1-font);  
+}
+
+.image{   
+    display: flex;
+    justify-content: center;
+}
+
+.optimize > span{
+    color: var(--color);
+}
+
+
+
+/* .personalize{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+} */
+
+.personalize1{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 18px;    
+    line-height:18px;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+.sign a {
+    background-color: var(--color);
+    color: var(--bg-color);
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+
+.sign p{
+    font-family: 'Gilroy-Medium', sans-serif;
+    color: #0065FE;
+}
+
+.amoeba{
+    margin-left: 27rem;   
+    width: 50%;
+    padding-left: 40px;
+    padding-top: 20px;    
+}
+
+.amoeba1{
+    
+    z-index: -1;
+    position: absolute;
+}
+
+.amoeba2{
+    position: relative;
+    padding-top: 25px; 
+}
+
+.amoeba3{
+    padding: 3rem;
+    border: solid 1px var(--color);
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    margin-bottom: 10px;
+}
+
+.amoeba3 >p {
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+}
+
+.amoeba3 img{
+    padding-right: 10rem;
+ 
+}
+
+.amoeba3-img{
+    font-size : 3px
+}
+
+
+ .tricky{
+    margin-top: 5rem;
+    
+}
+
+.one{
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.span{
+    color: #0065FE;
+}
+
+
+.trickyy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9FBFD;
+    gap: 4rem;
+    padding: 20px;
+}
+
+.trick2{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5rem;   
+    
+}
+
+.poss{
+    font-size: 32px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    line-height: 40px;
+}
+
+.active-user{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+
+/* section2  */
+.scissors{
+    margin-top: 12rem;
+}
+
+
+.link{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.link1{
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    
+}
+
+
+.link .img{
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(50, 132, 255, 0.13);
+    padding: 8px;
+}
+
+.link1-text{
+    align-items: center;
+    width: 500px;
+    flex-wrap: wrap;
+}
+
+.link1-text h1{
+    line-height: 32px;
+    font-size: 40px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.link1-text span{
+    color: #0065FE;
+}
+
+.line2-text{
+    width: 300px;
+    line-height: 25px;
+}
+
+.text-p{
+    margin-top: 20px;
+    line-height: 28px;
+    font-size: 16px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.text-pp{
+    margin-top: 10px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+
+}
+
+.text-ppp{
+    margin-top: 20px;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+
+}
+
+.url{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+
+
+
+
+/* section 3 */
+
+.pricing{  
+margin-top: 5rem;
+}
+
+.pricee{
+    margin: auto;
+    height: 108px;
+    width: 576.1px;
+
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 48px;
+    gap: 0.7rem;
+}
+
+.price > h1{
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    line-height: 48px;
+    font-size: 30px;
+}
+
+.price > h1 > span{
+    color: #0065FE;
+}
+
+.price1{
+    margin: auto;
+    width: 550px;
+    height: 52px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Gilroy-Medium', sans-serif;
+    line-height: 24px;
+}
+
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    position: relative;
+}
+
+
+.card1, .card3{
+    height: 455px;
+    max-width: 379px;
+    border: 0.5px solid #005AE2;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+    padding-top: 3.5rem;
+    position: absolute;
+}
+.card1{
+    margin-right: 45rem;
+}
+
+.card3{
+    margin-left: 45rem;
+}
+
+
+/* first card */
+.cardd{
+    width: 370px;
+}
+
+
+.class{
+    margin-right: 11rem;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.class1{
+    margin-right: 10rem;
+    margin-top: 1rem;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.class2{
+    margin-right: 3rem;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+/* second card */
+
+.classs{
+    margin-right: 7.5rem;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.classs1{
+    margin-right: 3.5rem;
+    margin-top: 1rem;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.classs2{
+    margin-right: 1.5rem;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+
+/* third card */
+
+.classss{
+    margin-right: 11rem;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.classss1{
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+.classss2{
+    margin-right: 1.5rem;
+    font-size: 20px;
+    line-height: 32px;
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.card2{
+    height: 700px;
+    width: 379px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 12px;
+    background-color: #1E3448;
+    text-align: center;
+    padding-top: 3.5rem;
+    z-index: 2;
+    
+}
+
+.price-flex {
+    display: flex;
+    justify-content: start;
+    margin-left: 4rem;
+    gap: 6px;
+    line-height: 3rem;
+}
+
+.price-flex > p{
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-size: 14px;
+    
+}
+
+
+/* cutom button */
+
+.custom{
+    margin-top: 5rem;
+}
+
+.custom1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.custom2{
+    height: 48px;
+    width: 200px;
+    line-height: 12px;
+    font-size: 16px; 
+    border: 1px solid #0065FE;
+    border-radius: 100px;
+    color: #0065FE;
+    background-color: #FFFFFF;
+}
+
+.custom3{
+    height: 48px;
+    width: 200px;
+    line-height: 12px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 100px;
+    color: #FFFFFF;
+    background-color: #0065FE;
+}
+
+
+
+/* Url section  */
+
+#section{
+    margin-top: 6rem;
+}
+
+.form-container {
+    position: relative;
+    background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+.my-form {
+    background-color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+}
+  
+.form-input{
+    width: 340px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 16px;
+    font-size: 12px;
+    font-family: 'Gilroy-Medium' sans-serif;
+    line-height: 18px;
+}
+
+.my-form input::placeholder {
+    color: #0065FE;
+  }
+
+.my-form select,input {
+    width: 170px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid #0065FE;
+    border-radius: 12px;
+    color: #0065FE;  
+    
+  }
+
+  .choose-domain{
+    font-size: 14px;
+    font-family: 'Gilroy-Medium' sans-serif;
+    line-height: 12px;
+}
+
+.alias{
+    font-size: 14px;
+    font-family: 'Gilroy-Medium' sans-serif;
+    line-height: 12px;
+}
+
+.my-form .input-group {
+    display: flex;
+    gap: 8px;
+  }
+  
+.my-form .input-group input {
+    margin-right: 6px;
+   
+  } 
+  
+  .my-form button {
+    background-color: #0065FE;
+    color: white;
+    height: 48px;
+    width: 340px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    gap: 3px;
+   
+  }
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Gilroy-SemiBold' sans-serif;
+    line-height: 12px;
+}
+  
+
+.form-text{
+    
+    color: var(--color);
+    width: 350px;
+    line-height: 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    
+}
+
+.my-form > p{
+    font-family: 'Gilroy-' ;
+}
+
+.group1{
+    z-index: -1;
+    width: 1000px;
+    position: absolute;
+    left: 0%;   
+}
+
+.group2{
+   z-index: -1;
+    width: 700px;
+    position: absolute;
+    right: 0%;
+    top: 3%;
+}
+
+
+/* FAQ section */
+
+#faq{
+    height: 1153px;
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.faqq{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: 30px;
+    line-height: 32px;
+    margin-top: 3rem;
+    gap: 7px;
+}
+
+ .faq > .faqq > .faq1{
+    font-size: 40px;
+    font-family: 'Gilroy-Medium';
+    line-height: 32px;
+}
+
+.acc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+}
+
+.accordion{
+    height: 50vh;
+    width: 600px;
+    list-style: none;
+  }
+  
+  .accordion li{
+    border-bottom: 0.5px solid #141414;
+    border-left: none;
+    border-right: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .accordion li label{
+    padding: 4px;
+    color: #141414;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gilroy-Medium';
+    font-size: 20px;
+    line-height: 32px;
+    
+  }
+
+  
+  .accordion li label::after{
+    content: '+';
+    font-size: 23px;
+  }
+  
+  .answer{
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    padding: 4px;
+    font-size: 16px;
+    font-family: 'Gilroy-Medium';
+    line-height: 32px;
+  }
+  
+  
+  .radio:checked ~ .answer{
+    height: 110px;
+  }
+  
+  .radio{
+    display: none;
+  }
+  
+  .radio:checked ~ label::after{
+    content: '-';
+    font-size: 1.7rem;
+  }
+
+.group3{
+    width: 300px;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+
+.group4{
+    z-index: -1;
+    position: absolute;
+    width: 300px;
+    right: 0%;
+    bottom: 0%;
+}
+
+
+/* revolutionalze section */
+.banner {
+    position: relative;
+    height: 400px;
+    background-color: #1E3448;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    text-align: center;
+    width: 806px;
+    height: 57px;
+  }
+  
+.rev{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    line-height: 48px;
+  }
+  
+  .my-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0065FE;
+    color: #ffffff;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 200px;
+    height:  48px;
+  }
+  
+
+.group5{
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+   
+}
+
+.group6{
+    width: 500px;
+    position: absolute;
+    right: 0;
+    bottom: 0; 
+   
+}
+
+
+/* footer section */
+
+#footer{
+    margin-top: 4rem;
+    position: relative;
+   
+    
+}
+
+.container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  
+  .item {
+    flex-basis: 15%;
+    padding: 20px;
+  }
+  
+  .item h3 {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Gilroy-Bold';
+    line-height: 24px;
+  }
+  
+  .item p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-family: 'Gilroy-Medium';
+    line-height: 24px;
+  }
+  
+
+  .footer{
+    height: 40px;
+    line-height: 32px
+  }
+
+  .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .social{
+    gap: 10px;
+  }
+
+  .group7{
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+  }
+
+  .term{
+    font-family: 'Gilroy-Medium';
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+  }
+  
+  .group8{
+    width: 450px;
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+  }
+
+  
+
+  /* media query */
+  
+  /* @media (max-width : 1044px) {
+    .amoeba{
+        margin: auto;
+    }
+
+    .amoeba3 img{
+        width: 400px;   
+    }
+
+    .trickyone{
+        width: 900px;
+    }
+
+
+    .one{ 
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .link{
+        padding-left: 10px;
+        gap: 4rem;
+    }
+
+    .link1-text{
+        width: 300px;
+    }
+
+
+    .card1, .card3{
+        height: 500px;
+        width: 350px;
+    }
+
+    .card1{
+        margin-right: 37rem;
+    }
+    
+    .card3{
+        margin-left: 38rem;
+    }
+
+    .card2{
+        height: 650px;
+        width: 350px;
+        
+    }
+
+        
+   
+} */
+
+
+@media only screen and (max-width : 568px) {
+    nav .links,
+    nav .last{
+        display: none;
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .drop-down{
+        display: block;
+    }
+
+    .optimize{
+        font-family: 'Gilroy-Medium';
+        line-height: 40px;
+        font-size: 30px;  
+    }
+
+    .personalize1{
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Gilroy-Light';
+        font-size: 16px;    
+        line-height: 20px;
+    }
+
+    .image{
+        display: none;
+    }
+
+     .amoeba{
+        margin: auto;
+        width: 300px;
+        margin-right: 3rem;
+    }
+
+    .amoeba3 img{
+        width: 300px;   
+    }
+
+    .trickyone{
+        width: 320px;
+    }
+
+    .trickyy{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .one{
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .poss1{
+        margin-top: 3rem;
+    }
+
+    .link{   
+        margin-top: -6rem;
+        flex-direction: column;
+        margin-left: 20px;    
+    }
+    .text-p{
+        width: 270px;
+    }
+
+    .url{
+        width: 280px;
+    }
+    
+    
+    .link1-text{
+        align-items: center;
+        width: 200px;
+        flex-wrap: wrap;
+      }
+    .link1-text h1{
+        line-height: 32px;
+        font-size: 30px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .pricee{
+        height: 108px;
+        width: 300px;
+    
+    }
+    .price > h1{
+        line-height: 35px;
+        font-size: 24px;
+    }
+    .price1{
+        margin: auto;
+        width: 300px;
+        height: 40px;
+        line-height: 20px;
+    }
+    .price{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+      
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+   
+    }
+
+    .card1, .card3{  
+        border: 0.5px solid #005AE2;
+        border-radius: 12px;
+        background-color: #FFFFFF;
+       
+        line-height: 30px;
+        padding-top: 3.5rem;
+      
+    }
+
+    .custom2,  .custom3{
+        height: 42px;
+        width: 150px;
+        line-height: 12px;
+        font-size: 14px; 
+    }
+
+    .my-form {
+        padding: 40px;
+        width: 400px;
+    }
+    .form-input{
+        width: 290px;
+    }
+    .my-form select,input {
+        width: 140px;
+        height: 40px;  
+    }   
+    .my-form button {
+        height: 48px;
+        width: 290px;
+    
+    }
+    
+    .form-text{
+        width: 300px;  
+    }
+
+    #faqq{
+        height: 100vh;
+        width: 300px;       
+    }
+
+    .accordion{
+        height: 200vh;
+        width: 300px;
+        list-style: none;
+      }
+
+      .banner{
+        margin-top: 4rem;
+      }
+
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .item{
+        margin-left: 10px;
+      }
+}
+
+
+
+@media (max-width : 896px) and (min-width : 569px) {
+    nav .links,
+    nav .last{
+    display: none;
+    
+    }
+
+    .bars{
+        display: block;
+    }
+
+    .drop-down{
+        display: block;
+    }
+
+    .optimize{
+        font-family: 'Gilroy-Bold', sans-serif;
+        line-height: 60px;
+        font-size: var(--h2-font);  
+    }
+
+    .personalize1{
+        margin-top: 10px;
+        text-align: center;
+        font-family: 'Gilroy-Light';
+        font-size: 16px;    
+        line-height: 20px;
+    }
+
+    .image{
+        display: none;
+    }
+
+     .amoeba{
+        margin: auto;
+        width: 400px;
+        margin-right: 30px;
+    }
+
+    .amoeba3 img{
+        width: 300px;   
+    }
+
+    .trickyone{
+        width: 419px;
+    }
+
+    .trickyy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F9FBFD;
+        padding: 20px;
+    }
+
+    .trick2{
+        width: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+
+
+    .one{
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .trick2{
+        gap: 3rem;   
+    }
+
+    .link{   
+        margin-top: -6rem;
+        flex-direction: column;
+        margin-left: 20px;    
+    }
+    .text-p{
+        width: 320px;
+    }
+
+    .url{
+        width: 320px;
+    }
+    
+    
+    .link1-text{
+        align-items: center;
+        width: 200px;
+        flex-wrap: wrap;
+      }
+    .link1-text h1{
+        line-height: 32px;
+        font-size: 30px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .pricee{
+        height: 108px;
+        width: 400.1px;
+    
+    }
+    .price > h1{
+        line-height: 35px;
+        font-size: 24px;
+    }
+    .price1{
+        margin: auto;
+        width: 350px;
+        height: 40px;
+        line-height: 20px;
+    }
+    .price{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+      
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+   
+    }
+
+    .card1, .card3{  
+        border: 0.5px solid #005AE2;
+        border-radius: 12px;
+        background-color: #FFFFFF;
+       
+        line-height: 30px;
+        padding-top: 3.5rem;
+      
+    }
+
+    .custom2,  .custom3{
+        height: 42px;
+        width: 150px;
+        line-height: 12px;
+        font-size: 14px; 
+    }
+
+    .my-form {
+        padding: 40px;
+        width: 400px;
+    }
+    .form-input{
+        width: 290px;
+    }
+    .my-form select,input {
+        width: 140px;
+        height: 40px;  
+    }   
+    .my-form button {
+        height: 48px;
+        width: 290px;
+    
+    }
+    
+    .form-text{
+        width: 300px;  
+    }
+    
+
+     .accordion{
+        height: 40vh;
+        width: 350px;
+        list-style: none;
+      }
+
+      .container{
+        display: flex;
+        flex-direction: column;
+      } 
+    
+    }
+
+
+@media only screen and (max-width : 1440px) and (min-width : 1024px){
+   
+    .amoeba{
+        margin: auto;
+        width: 300px;
+        margin-right: 8rem;
+    }
+
+    .amoeba3 img{
+        width: 300px;   
+    } 
+
+    .link1-text{
+        width: 300px;
+    }  
+
+
+    .card1, .card3{
+        height: 400px;
+        width: 320px;
+    }
+
+    .card2{
+        height: 600px;
+        width: 320px;
+    }
+
+    .card1{
+        margin-right: 34rem;
+    }
+    
+    .card3{
+        margin-left: 34rem;
+    }
+
+    .price-flex {
+        margin-left: 4rem;
+        gap: 6px;
+        
+    }
+    
+    .price-flex > p{
+        font-size: 13px; 
+        line-height: 2.5rem;
+    }  
+}
